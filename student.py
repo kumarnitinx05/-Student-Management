@@ -25,6 +25,15 @@ def display_students():
         print("\nRoll Number:", student["roll_no"])
         print("Name:", student["name"])
         print("Marks:", student["marks"])
+        def search_student():
+    roll_no = input("Enter roll number to search: ")
+
+    for student in students:
+        if student["roll_no"] == roll_no:
+            print("Student found:", student)
+            return
+
+    print("Student not found.")
 
 while True:
     print("\n--- Student Management System ---")
