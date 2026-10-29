@@ -5,6 +5,7 @@ def add_student():
     roll_no = input("Enter roll number: ")
     name = input("Enter student name: ")
     marks = float(input("Enter marks: "))
+        print("\nTotal students:", len(students))
 
     student = {
         "roll_no": roll_no,
